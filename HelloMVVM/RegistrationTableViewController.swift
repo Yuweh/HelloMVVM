@@ -15,10 +15,24 @@ class RegistrationTableViewController : UITableViewController {
     @IBOutlet weak var emailTextField :UITextField!
     @IBOutlet weak var passwordTextField :UITextField!
     
+    
+    private var registrationViewModel: RegistrationViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
+    @IBAction func saveBarButtonTapped() {
+        
+        //populates the RegistrationViewModel
+        self.registrationViewModel = RegistrationViewModel(firstName: self.firstNameTextField.text!, lastName: self.lastnameTextField.text!, email: self.emailTextField.text!, password: self.passwordTextField.text!)
+        
+        let user = User(vm: self.registrationViewModel)
+        
+        //save the user
+        self.registrationViewModel.save()
+        
+    }
     
 }

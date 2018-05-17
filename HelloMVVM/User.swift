@@ -15,4 +15,11 @@ class User {
     var email :String!
     var password :String!
     
+    init(vm: RegistrationViewModel) {
+        self.firstName = vm.firstName
+        self.lastName = vm.lastName
+        self.email = vm.email
+        self.password = vm.password
+    }
+    
 }

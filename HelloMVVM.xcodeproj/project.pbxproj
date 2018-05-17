@@ -13,6 +13,7 @@
 		8DB0195C1FCBBC010085F8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0195B1FCBBC010085F8D6 /* Assets.xcassets */; };
 		8DB0195F1FCBBC010085F8D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0195D1FCBBC010085F8D6 /* LaunchScreen.storyboard */; };
 		8DB019691FCBBCC20085F8D6 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB019681FCBBCC20085F8D6 /* RegistrationTableViewController.swift */; };
+		90CE294420AD176C007E7FEC /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE294320AD176C007E7FEC /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8DB0195E1FCBBC010085F8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DB019601FCBBC010085F8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DB019681FCBBCC20085F8D6 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+		90CE294320AD176C007E7FEC /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +58,14 @@
 		8DB019531FCBBC010085F8D6 /* HelloMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				8DB019541FCBBC010085F8D6 /* AppDelegate.swift */,
+				8DB019681FCBBCC20085F8D6 /* RegistrationTableViewController.swift */,
+				90CE294320AD176C007E7FEC /* RegistrationViewModel.swift */,
+				8D2806891FCBC29200CC79B8 /* User.swift */,
 				8DB019581FCBBC010085F8D6 /* Main.storyboard */,
 				8DB0195B1FCBBC010085F8D6 /* Assets.xcassets */,
+				8DB019541FCBBC010085F8D6 /* AppDelegate.swift */,
 				8DB0195D1FCBBC010085F8D6 /* LaunchScreen.storyboard */,
 				8DB019601FCBBC010085F8D6 /* Info.plist */,
-				8DB019681FCBBCC20085F8D6 /* RegistrationTableViewController.swift */,
-				8D2806891FCBC29200CC79B8 /* User.swift */,
 			);
 			path = HelloMVVM;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DB019691FCBBCC20085F8D6 /* RegistrationTableViewController.swift in Sources */,
+				90CE294420AD176C007E7FEC /* RegistrationViewModel.swift in Sources */,
 				8DB019551FCBBC010085F8D6 /* AppDelegate.swift in Sources */,
 				8D28068A1FCBC29200CC79B8 /* User.swift in Sources */,
 			);
