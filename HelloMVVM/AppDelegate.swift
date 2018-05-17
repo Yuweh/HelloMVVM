@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  HelloMVVM
 //
-//  Created by Mohammad Azam on 11/26/17.
-//  Copyright © 2017 Mohammad Azam. All rights reserved.
+//  Copyright © 2017 XiApps. All rights reserved.
 //
 
 import UIKit
