@@ -22,12 +22,15 @@ class UsersTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let indexPath = (self.tableView.indexPathForSelectedRow)!
+        let registrationTVC = segue.destination as! RegistrationTableViewController
+        let userViewModel = self.usersListViewModel.userViewModels[indexPath.row]
+        registrationTVC.selectedUserViewModel = userViewModel
+        
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

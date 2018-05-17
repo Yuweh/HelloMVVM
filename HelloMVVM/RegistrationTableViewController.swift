@@ -17,10 +17,12 @@ class RegistrationTableViewController : UITableViewController {
     
     
     private var registrationViewModel: RegistrationViewModel!
+    var selectedUserViewModel: UserViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.firstNameTextField.text = self.selectedUserViewModel.firstName
+        self.lastnameTextField.text = self.selectedUserViewModel.lastName
     }
     
     @IBAction func saveBarButtonTapped() {
@@ -28,10 +30,9 @@ class RegistrationTableViewController : UITableViewController {
         //populates the RegistrationViewModel
         self.registrationViewModel = RegistrationViewModel(firstName: self.firstNameTextField.text!, lastName: self.lastnameTextField.text!, email: self.emailTextField.text!, password: self.passwordTextField.text!)
         
-        let user = User(vm: self.registrationViewModel)
+        //let user = User(vm: self.registrationViewModel)
         
-        //save the user
-        self.registrationViewModel.save()
+        self.registrationViewModel.save() //save the user
         
     }
     

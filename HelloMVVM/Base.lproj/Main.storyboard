@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Registration-->
+        <!--Registration Info-->
         <scene sceneID="vUW-ik-jeY">
             <objects>
                 <tableViewController id="pdR-SS-7ES" customClass="RegistrationTableViewController" customModule="HelloMVVM" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,6 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Sgv-qI-6af">
                                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -52,7 +51,6 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="42y-J6-DJD">
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
@@ -70,7 +68,6 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="rSn-vx-1w5">
                                         <rect key="frame" x="0.0" y="132" width="375" height="44"/>
@@ -88,7 +85,6 @@
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.98823529409999999" green="0.30980392159999998" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -98,7 +94,7 @@
                             <outlet property="delegate" destination="pdR-SS-7ES" id="2TR-NG-15z"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Registration" id="g7g-E3-0Ho">
+                    <navigationItem key="navigationItem" title="Registration Info" id="g7g-E3-0Ho">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="nBN-XS-TTU">
                             <connections>
                                 <action selector="saveBarButtonTapped" destination="pdR-SS-7ES" id="jfl-eV-qgX"/>
@@ -134,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="-482" y="0.0"/>
         </scene>
-        <!--Users Table View Controller-->
+        <!--Home-->
         <scene sceneID="N85-41-zgA">
             <objects>
                 <tableViewController id="a0f-zT-k7P" customClass="UsersTableViewController" customModule="HelloMVVM" customModuleProvider="target" sceneMemberID="viewController">
@@ -160,7 +156,7 @@
                             <outlet property="delegate" destination="a0f-zT-k7P" id="lGW-nk-yLh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vYd-Nm-xHK"/>
+                    <navigationItem key="navigationItem" title="Home" id="vYd-Nm-xHK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gqA-Vm-op9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,6 +170,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iRZ-kS-k46">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
